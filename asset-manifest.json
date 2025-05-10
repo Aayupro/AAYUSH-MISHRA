@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AAYUSH-MISHRA/static/css/main.a781aefb.css",
+    "main.js": "/AAYUSH-MISHRA/static/js/main.02c610a5.js",
+    "index.html": "/AAYUSH-MISHRA/index.html",
+    "main.a781aefb.css.map": "/AAYUSH-MISHRA/static/css/main.a781aefb.css.map",
+    "main.02c610a5.js.map": "/AAYUSH-MISHRA/static/js/main.02c610a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a781aefb.css",
+    "static/js/main.02c610a5.js"
+  ]
+}
