@@ -59,7 +59,7 @@ const Hero = () => {
           <a href="https://www.linkedin.com/in/aayush-mishra24/" className="social-icon">
             <FaLinkedin />
           </a>
-          <a href="aayushspotlight@gmail.com" className="social-icon">
+          <a href="mailto:aayushspotlight@gmail.com" className="social-icon">
             <FaEnvelope />
           </a>
         </div>
