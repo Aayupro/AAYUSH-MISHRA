@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion';
 import { FaDownload } from 'react-icons/fa';
 import '../styles/About.css';
+import profilePic from '../assets/images/profile.jpeg';
+import cvFile from '../assets/resumes/CV_AAYUSH.pdf'; 
+import profilePicWebp from '../assets/images/profile.webp';
+
 
 const About = () => {
   const skills = [
@@ -31,23 +35,34 @@ const About = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
         className="about-container"
-      >
-        <div className="about-image-container">
-          <img 
-            src="/assets/images/profile.jpeg" 
-            alt="Profile" 
-            className="about-image"
-          />
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={downloadCV}
-            className="download-btn"
-          >
-            <FaDownload /> Download CV
-          </motion.button>
-        </div>
+      ><div>
+        <div className="profile-container">
+          <div>
+          <picture>
+  <source srcSet={profilePicWebp} type="image/webp" />
+  <img 
+    src={profilePic} 
+    alt="Profile" 
+    className="about-image"
+    loading="lazy"
+  />
+</picture>
+          </div>
+        <div> 
+        <motion.a
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          href={cvFile}
+          download="CV_AAYUSH.pdf"
+          className="download-btn"
+          viewport={{ once: true }}
+        >
+  <FaDownload /> Download CV
+</motion.a>
+</div></div></div>
+        
 
         <div className="about-content">
           <h3 className="about-subtitle">Who am I?</h3>
