@@ -7,7 +7,7 @@ const Footer = () => {
     { icon: <FaGithub />, url: 'https://github.com/Aayupro', name: 'GitHub' },
     { icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/aayush-mishra24/', name: 'LinkedIn' },
     { icon: <FaTwitter />, url: 'https://x.com/AlmightyAayush', name: 'Twitter' },
-    { icon: <FaEnvelope />, url: 'aayushspotlight@gmail.com', name: 'Email' },
+    { icon: <FaEnvelope />, url: 'mailto:aayushspotlight@gmail.com', name: 'Email' },
   ];
 
   return (
